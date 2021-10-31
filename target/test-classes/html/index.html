@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio CI&T</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h2>
+        Desafio/Treinamento CI&T Selenium WebDriver
+    </h2>
+    <div class="container">
+
+        <form class="collum-list four" id="item-1" name="myForm" onsubmit="return validateForm()" method="post">
+            <input type="text" class="name" placeholder="Seu nome" aria-label="email" name="fname">
+            <input type="text" class="year" placeholder="Sua idade" aria-label="year" name="fyear">
+            <input type="text" class="date" placeholder="Data Nascimento" aria-label="year" name="fdate">
+            <input type="text" class="date" placeholder="Senha padrão 221221" aria-label="year" name="fsenha">
+            <input type="email" class="email" aria-label="emi" placeholder="E-mail" name="femail">
+            <input type="submit" value="Login" aria-label="btn" id="btn">
+        </form>
+        <div class="collum-list four" id="item-2">
+
+            <div class="items">
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">CI&T</label><br>
+            </div>
+
+            <div class="items">
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">Ferrari</label><br>
+            </div>
+
+            <div class="items">
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">Amazon</label>
+            </div>
+
+        </div>
+        <div class="collum-list four" id="item-3">
+
+            <select name="items-dev" id="team-dev">
+                <option value="volvo">QA</option>
+                <option value="saab" selected>DEV</option>
+                <option value="mercedes">PO</option>
+                <option value="audi">SM</option>
+            </select>
+        </div>
+        <div class="collum-list four" id="item-4">
+
+            <form>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1">Ruby</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2">Diamante</label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                <label for="vehicle3">Outro</label>
+            </form>
+        </div>
+        <div class="collum-list four" id="item-5">
+            <ul class="random-list">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+            </ul>
+        </div>
+        <div class="collum-list four" id="item-6">
+            <ul class="random-list">
+                <li>A</li>
+                <li>B</li>
+                <li>C</li>
+                <li>D</li>
+                <li>E</li>
+                <li>F</li>
+                <li>G</li>
+                <li>H</li>
+                <li>I</li>
+                <li>J</li>
+                <li>K</li>
+                <li>L</li>
+                <li>M</li>
+                <li>N</li>
+                <li>O</li>
+                <li>P</li>
+                <li>Q</li>
+                <li>R</li>
+                <li>S</li>
+                <li>T</li>
+                <li>U</li>
+                <li>V</li>
+                <li>W</li>
+                <li>X</li>
+                <li>Y</li>
+                <li>Z</li>
+
+            </ul>
+        </div>
+        <div class="text-desafio">
+            <h2>Preencher com informações do Desafio</h2>
+            <div class="area-text">
+            </div>
+        </div>
+    </div>
+    <script>
+
+        window.addEventListener("scroll", (event) => {
+            let scroll = this.scrollY;
+            if (scroll > 280) {
+                var x = document.getElementsByClassName("area-text");
+                var content = x[0].innerHTML;
+                var div = document.createElement('textarea');
+                div.setAttribute('id', 'filltext');
+                div.setAttribute('cols', 10)
+                div.setAttribute('rows', 5)
+                // div.innerHTML = content;
+                x[0].innerHTML = "";
+                x[0].appendChild(div);
+            }
+
+            console.log(scroll)
+        });
+
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".random-list").randomize("li");
+        });
+
+        (function ($) {
+
+            $.fn.randomize = function (childElem) {
+                return this.each(function () {
+                    var $this = $(this);
+                    var elems = $this.children(childElem);
+
+                    elems.sort(function () {
+                        return (Math.round(Math.random()) - 0.5);
+                    });
+
+                    $this.remove(childElem);
+
+                    for (var i = 0; i < elems.length; i++)
+                        $this.append(elems[i]);
+
+                });
+            };
+
+        })(jQuery);
+    </script>
+
+    <script type="text/javascript">
+        function validateForm() {
+            let x = document.forms["myForm"]["fname"].value;
+            let y = document.forms["myForm"]["femail"].value;
+            let pass = document.forms["myForm"]["fsenha"].value;
+            let year = document.forms["myForm"]["fyear"].value;
+
+            if (x == "" || y == "" || year == "") {
+                alert("Ops, deve ter algum campo em branco...");
+                return false;
+            } else if (pass != "221221") {
+                alert("Senha informada não é a padrão")
+                return false;
+            } else {
+                alert(`Login realizado, parabéns ${x}.`)
+                return false;
+            }
+        }
+    </script>
+
+    <script>
+
+    </script>
+</body>
+
+</html>

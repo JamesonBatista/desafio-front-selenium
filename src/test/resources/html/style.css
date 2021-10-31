@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+body {
+  background: #c4c4c4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  margin-bottom: 500px;
+}
+
+body h2 {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #eec2c2;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  text-align: center;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.collum-list {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  margin-top: 20px;
+  height: 50%;
+  border: 1px solid gray;
+  margin: 10px 5px;
+}
+
+.collum-list input {
+  padding: 10px;
+  margin: 5px 10px;
+  width: 90%;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+.collum-list #btn {
+  cursor: pointer;
+}
+
+#item-2 label {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#item-2 .items {
+  display: block;
+  width: 90%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#item-3 label {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#item-3 #team-dev {
+  background-color: #dbd7d7;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+#item-4 label {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#item-4 form {
+  display: block;
+  width: 90%;
+}
+
+#item-5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#item-5 ul {
+  width: 90%;
+  list-style-type: none;
+  height: 100%;
+  font-size: 25px;
+  margin-top: 30px;
+  display: block;
+  -webkit-column-count: 3;
+          column-count: 3;
+}
+
+#item-5 ul li {
+  display: inline-block;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  height: 50px;
+  border-radius: 50%;
+  width: 50px;
+}
+
+#item-6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#item-6 ul {
+  width: 90%;
+  list-style-type: none;
+  height: 100%;
+  margin-top: 30px;
+  display: block;
+  -webkit-column-count: 3;
+          column-count: 3;
+  font-size: 20px;
+}
+
+#item-6 ul li {
+  display: inline-block;
+  margin-bottom: 10px;
+  margin: 0 5px;
+  margin-bottom: 5px;
+  height: 30px;
+  border-radius: 50%;
+  width: 30px;
+}
+
+.text-desafio {
+  display: block;
+  margin-top: 200px;
+  width: 90%;
+}
+
+.text-desafio #filltext {
+  width: 90%;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=style.css.map */

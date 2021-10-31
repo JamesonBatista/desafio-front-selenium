@@ -1,0 +1,41 @@
+**Olá Bem vindo ao Desafio FrontEnd Java/Selenium**
+
+Instruções:
+
+1 - Baixe o projeto já configurado no github **
+2 - No caminho test/desafio/DesafioSelenium.java já existe um test configurado com o driver.
+
+
+Desafio:
+
+1 - Preencher os campos do primeiro card, nome e email etc.
+    - selecionar um radio 2 card
+    - selecionar uma opção 3 card
+    - selecionar um checkbox 4 card
+
+2 - Todos os passos do 1.
+    - Validar na tela de Login ao clicar em *Login* popup de erro e sucesso
+    - Imprimir a lista de números do card 5
+
+3 - Todos os passos do 1 e 2.
+    - Imprimir lista de letras card 6
+
+4 - Todos os passos 1, 2 e 3.
+    - No final da página, no capo em aberto, escrever o texto *Olá meu nome é (seu nome)
+     e estou fazendo treinamento CIT Java Selenium*.
+
+5 - Todos os passos 1, 2.
+    - Imprimir o card 5 em ordem numérica
+
+6 - Todos os passos 1, 2 e 5.
+    - Imprimir letras do card 6 em ordem alfabética.
+
+7 - Todos os passos 1 (nome, idade, data de nascimento, senha) deverão ser preenchido com o alfabeto do card 6
+    - Usar o card 5 numérico para preencher a senha padrão.
+
+8 - Todos os passos 7.
+    - Usar o campo texto aberto no final da página para o seguinte texto:
+    Olá meu nome é (seu nome) esse desafio foi concluido no dia (data do dia)
+    OBS: Usando o teclado numérico e o alfabético.
+
+    
