@@ -1,8 +1,8 @@
-**Olá Bem vindo ao Desafio FrontEnd Java/Selenium**
+                                    **Olá Bem vindo ao Desafio FrontEnd Java/Selenium**
 
 Instruções:
 
-1 - Baixe o projeto já configurado no github **
+1 - Baixe o projeto já configurado no github git clone https://github.com/JamesonBatista/desafio-front-selenium.git
 2 - No caminho test/desafio/DesafioSelenium.java já existe um test configurado com o driver.
 3 - Dentro da pasta test/resources/html existem dois arquivos index.html e style.css abra o VsCode, crie uma pasta
     e cole ambos arquivos lá. Em seguida instale instale no Vscode a extensão "Live Server", após instalada
@@ -39,6 +39,6 @@ Desafio:
 8 - Todos os passos 7.
     - Usar o campo texto aberto no final da página para o seguinte texto:
     Olá meu nome é (seu nome) esse desafio foi concluido no dia (data do dia)
-    OBS: Usando o teclado numérico e o alfabético.
+    OBS: Usando o teclado numérico e o alfabético para escrever o texto.
 
     
